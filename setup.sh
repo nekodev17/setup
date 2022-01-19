@@ -57,9 +57,11 @@ function debian_pkgs() {
     echoText "Setting up build environment for Debian"
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt-get install openjdk-8-jdk git-core gnupg flex bison gperf lib32ncurses5-dev libx11-dev \
-    build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 x11proto-core-dev \
-    lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip make bc schedtool repo imagemagick
+    sudo apt install openssh-server screen python git openjdk-8-jdk android-tools-adb bc bison \
+    build-essential curl flex g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses-dev \
+    lib32readline-dev lib32z1-dev  liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev \
+    libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc yasm zip zlib1g-dev \
+    libtinfo5 libncurses5
 }
 
 # Function for installing arch packages
